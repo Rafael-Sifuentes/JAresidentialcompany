@@ -11,8 +11,8 @@
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="/assets/ETX-routes/reusable-css.css">
-    <link rel="stylesheet" href="/assets/css/gallery.css">
+    <link rel="stylesheet" href="/assets/ETX-routes/css/reusable-css.css">
+    <link rel="stylesheet" href="/assets/ETX-routes/css/gallery.css">
     <title>Gallery | J&A residential company</title>
     <meta title="description" content="">
     <meta title="keywords" content="Home builders contractor Houston custom homes">
@@ -34,7 +34,7 @@
 
                 <li class="nav-list-item"><a href="#home">HOME</a></li>
 
-                <li class="nav-list-item"><a href="#gallery">GALLERY</a></li>
+                <li class="nav-list-item"><a href="#images-gallery">GALLERY</a></li>
                 <li class="nav-list-item"><a href="#services"></a></li>
                 <li class="nav-list-item"><a href="#portfolio"></a></li>
                 <li class="nav-list-item"><a href="#about"></a></li>
@@ -51,36 +51,49 @@
 
     <main class="main">
 
-        <section class="gallery-home section">
+        <section class="gallery-home section" id="home">
 
             <div class="gallery-home-container container flex-column">
-                <div class="main-logo-container"><img src="/assets/IMG/Main-logo.svg" alt="Main logo"></div>
-                <h1 class="gallery-home-title section-title">Explore our<br><b>Gallery</b></h1>
+                <div class="main-logo-container bottom"><img src="/assets/IMG/Main-logo.svg" alt="Main logo"></div>
+                <h1 class="gallery-home-title section-title bottom-delayed">Explore our<br><b>Gallery</b></h1>
 
                 <ul class="gallery-list">
-                    <li class="gallery-list-item"><h4>DRYWALL</h4></li>
-                    <li class="gallery-list-item"><h4>PAINT</h4></li>
-                    <li class="gallery-list-item"><h4>CARPENTRY</h4></li>
-                    <li class="gallery-list-item"><h4>TILE</h4></li>
+                    <li class="gallery-list-item left-delayed"><h4>DRYWALL</h4></li>
+                    <li class="gallery-list-item left-delayed"><h4>PAINT</h4></li>
+                    <li class="gallery-list-item left-delayed"><h4>CARPENTRY</h4></li>
+                    <li class="gallery-list-item left-delayed"><h4>TILE</h4></li>
                 </ul>
 
-                <a href="#images-gallery" class="gallery-button"><img src="/assets/IMG/arrow-icon-white.svg" alt="arrow-icon"></a>
+                <a href="#images-gallery" class="gallery-button top"><img src="/assets/IMG/arrow-icon-white.svg" alt="arrow-icon"></a>
             </div>
 
 
-            <img src="/assets/IMG/Home-background-image.png" alt="Gallery home background image" class="home-background-image">
+            <img src="/assets/IMG/gallery-one.png" alt="Gallery home background image" class="home-background-image scale" id="gallery-home-background">
         </section>
 
         <section class="images-gallery section" id="images-gallery">
 
             <div class="images-gallery-container container grid">
 
-                <div class="image-card-primary image-card"><img src="/assets/IMG/About-image-1.png" alt="image"></div>
-                <div class="image-card-secondary image-card"><img src="/assets/IMG/About-image-4.png" alt="gallery image"></div>
-                <div class="image-card-primary image-card"><img src="/assets/IMG/About-image-5.png" alt="image"></div>
-                <div class="image-card-secondary image-card"><img src="/assets/IMG/About-image-6.png" alt="gallery image"></div><div class="image-card-primary image-card"><img src="/assets/IMG/About-image-1.png" alt="image"></div>
-                <div class="image-card-secondary image-card"><img src="/assets/IMG/About-image-7.png" alt="gallery image"></div><div class="image-card-primary image-card"><img src="/assets/IMG/About-image-1.png" alt="image"></div>
-                <div class="image-card-secondary image-card"><img src="/assets/IMG/About-image-8.png" alt="gallery image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-one.png" alt="image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-two.png" alt="gallery image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-three.png" alt="image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-four.png" alt="image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-five.png" alt="gallery image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-six.png" alt="gallery image"></div>
+
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-8.png" alt="image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-9.png" alt="gallery image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-10.png" alt="image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-11.png" alt="image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-12.png" alt="gallery image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-13.png" alt="gallery image"></div>
+
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-14.png" alt="image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-15.png" alt="gallery image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-16.png" alt="image"></div>
+                <div class="image-card-secondary image-card"><img src="/assets/IMG/gallery-17.png" alt="image"></div>
+                <div class="image-card-primary image-card"><img src="/assets/IMG/gallery-19.png" alt="gallery image"></div>
 
             </div>
 
@@ -204,6 +217,9 @@
     </footer> 
     
 
-    <script src="/assets/ETX-routes/header.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/assets/ETX-routes/javascript/header.js"></script>
+    <script src="/assets/ETX-routes/javascript/reusable-js.js"></script>
+    <script src="/assets/ETX-routes/javascript/gallery-js.js"></script>
 </body>
 </html>
