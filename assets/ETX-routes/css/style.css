@@ -377,17 +377,6 @@ img{
     gap: 1rem;
 }
 
-.home-background-image{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-
 .home-background-video {
     position: absolute;
     height: 100%;
@@ -771,6 +760,10 @@ input{
     background-color: transparent;
     gap: .5rem;
 }
+
+.contact-button{
+    color: var(--primary-color);
+}
 /* -=========================================================================- */
 
 .footer{
@@ -878,12 +871,6 @@ input{
     .services-list{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-    }
-    
-    .contact-form{
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
     }
 
     .grid-item-three,

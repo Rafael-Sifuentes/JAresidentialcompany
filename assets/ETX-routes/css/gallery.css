@@ -109,9 +109,20 @@
     border-radius: var(--border-radius);
 }
 
+.image-card-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
 .image-card{
     transition: all .4s ease-in-out;
-    /* margin: .5rem; */
+}
+
+.image-card-alt{
+    height: 400px;
+    transition: all .4s ease-in-out;
 }
 
 .image-card:hover{
@@ -131,6 +142,11 @@
     .images-gallery-container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+    }
+
+    .image-card-video{
+        grid-column: span 2;
+        grid-row: span 1;
     }
 
     .image-card-primary{
