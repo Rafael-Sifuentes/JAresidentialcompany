@@ -134,6 +134,10 @@
 
 @media screen and (min-width: 700px){
 
+    .gallery-home-title{
+        font-size: 5rem;
+    }
+
     .gallery-list{
         flex-direction: row;
         gap: 3rem;

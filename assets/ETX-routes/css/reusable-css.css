@@ -179,7 +179,7 @@ img{
 }
 
 .button-primary{
-    background-color: var(--container-color);
+    background-color: var(--primary-color);
 }
 
 .button-primary h4,
