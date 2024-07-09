@@ -205,7 +205,7 @@ img{
 }
 
 .nav-logo img{
-    width: 164px;
+    width: 300px;
 }
 
 .nav-list{
@@ -261,7 +261,7 @@ img{
 
 .nav-list-item:nth-child(6) .nav-button{
     color: var(--text-color);
-    font-weight: var(--font-bold);
+    /* font-weight: var(--font-bold); */
 }
 
 /* -================================= MOBILE NAVIGATION CSS ================================- */
@@ -314,14 +314,20 @@ img{
 
     .navigation{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        gap: 1rem;
     }
 
     .nav-list{
         flex-direction: row;
-        gap: 2rem;
+        gap: 2.5rem;
         align-items: center;
+    }
+
+    .nav-logo img{
+        /* margin-bottom: .5rem; */
     }
 
     .nav-list-item a{
@@ -329,12 +335,21 @@ img{
         font-weight: var(--font-regular);
     }
 
-    .nav-list-item:nth-child(6){
+    /* .nav-list-item:nth-child(6){
         width: 128px;
         height: 48px;
         margin-top: 0;
         margin-left: 1rem;
         border-radius: var(--border-radius);
+    } */
+
+    .nav-list-item:nth-child(6){
+        width: max-content;
+        height: max-content;
+        margin-top: 0;
+        margin-left: 0;
+        border-radius: var(--border-radius);
+        background-color: transparent;
     }
     
 }

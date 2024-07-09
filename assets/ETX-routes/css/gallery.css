@@ -72,7 +72,7 @@
     left: 0;
     z-index: -1;
     object-fit: cover;
-    filter: brightness(70%);
+    filter: brightness(50%);
     transition: all .4s ease-in-out;
     transform: scale(.9);
     border-radius: var(--border-radius);
