@@ -23,26 +23,6 @@
     font-weight: 300;
 }
 
-.title-line{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-100%, 0);
-    width: 100%;
-    height: 4px;
-    background-color: var(--primary-color);
-}
-
-.title-line-alt{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-100%, 0);
-    width: 100%;
-    height: 4px;
-    background-color: var(--primary-color);
-}
-
 .gallery-list{
     display: flex;
     flex-direction: column;
