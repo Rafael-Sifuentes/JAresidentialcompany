@@ -25,6 +25,9 @@
     object-fit: cover;
     z-index: -1;
     filter: brightness(50%);
+    transition: all .4s ease-in-out;
+    transform: scale(.9);
+    border-radius: var(--border-radius);
 }
 
 .projects-home-container{
@@ -46,6 +49,18 @@
     text-align: center;
 }
 
+.gallery-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-list-item h4{
+    font-weight: var(--font-regular);
+}
+
 .projects-button{
     margin-top: 1rem;
     height: 64px;
@@ -54,6 +69,10 @@
     border-radius: var(--border-radius);
     display: grid;
     place-items: center;
+}
+
+.scale{
+    transform: scale(1.1);
 }
 
 .projects-showcase-container{
@@ -129,6 +148,15 @@
 
 
 @media screen and (min-width: 700px){
+
+    .projects-home-title{
+        font-size: 5rem;
+    }
+
+    .gallery-list{
+        flex-direction: row;
+        gap: 3rem;
+    }
 
     .showcase-grid{
         grid-template-columns: repeat(2, 1fr);

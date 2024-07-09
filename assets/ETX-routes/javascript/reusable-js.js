@@ -34,3 +34,26 @@ const sr = ScrollReveal({
   sr.reveal(`.right`,{
     origin: 'right',
   })
+
+
+
+/*=============== EMAIL JS ===============*/
+
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    emailjs.sendForm('service_z8fni4v', 'template_1bsr0gn', '#contact-form', 'on_mfnKJl6uSgNNI5')
+
+        .then(() =>{
+          contactMessage.textContent = 'Message sent succesfully ✅'
+          alert("Message sent succesfully");
+        }, () =>{
+          contactMessage.textContent = 'Message not sent (service error) ❌'
+          alert("Message not sent succesfully (service error)");
+        })
+}
+
+contactForm.addEventListener('submit', sendEmail)

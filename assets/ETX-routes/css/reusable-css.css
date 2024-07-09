@@ -23,7 +23,7 @@
     --h2-font-size: 2.488rem;
     --h3-font-size: 2.074rem;
     --h4-font-size: 1.728rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 24px;
     --small-font-size: .75em;
 
     --icon-size: 2rem;
@@ -518,6 +518,12 @@ input{
         align-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid-item-three,
+    .grid-item-four{
+        grid-column: span 2;
+        grid-row: span 1;
     }
 
     .footer-credits-container{
