@@ -520,11 +520,11 @@ input{
         grid-template-rows: repeat(3, 1fr);
     }
 
-    .grid-item-three,
+    /* .grid-item-three,
     .grid-item-four{
         grid-column: span 2;
         grid-row: span 1;
-    }
+    } */
 
     .footer-credits-container{
         flex-direction: row;

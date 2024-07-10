@@ -100,9 +100,10 @@
 }
 
 .project-avaliability{
+    display: none;
     width: 96px;
     height: 32px;
-    display: grid;
+    /* display: grid; */
     place-items: center;
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
