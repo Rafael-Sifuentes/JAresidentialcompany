@@ -92,6 +92,7 @@
 }
 
 .project-title-flex-group{
+    visibility: hidden;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
