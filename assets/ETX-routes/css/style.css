@@ -179,14 +179,30 @@
     gap: 1rem;
 }
 
+.gallery-buttons-container .gallery-button:hover:nth-child(1){
+    background-color: var(--primary-color);
+}
+
 .gallery-button{
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: all .4s ease-in-out;
+    height: 64px;
+    padding: 1rem;
+    border-radius: var(--border-radius);
 }
 
 .gallery-button h4{
     color: var(--text-color);
+}
+
+.gallery-button:hover{
+    background-color: var(--text-color);
+}
+
+.gallery-button:hover h4{
+    color: var(--body-color);
 }
 /* -============================================================================- */
 

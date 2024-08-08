@@ -326,10 +326,6 @@ img{
         align-items: center;
     }
 
-    .nav-logo img{
-        /* margin-bottom: .5rem; */
-    }
-
     .nav-list-item a{
         font-size: 13.33px;
         font-weight: var(--font-regular);

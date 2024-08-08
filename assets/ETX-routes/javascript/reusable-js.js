@@ -28,7 +28,6 @@ const sr = ScrollReveal({
     origin: 'left',
     delay: 400,
     interval: 350,
-
   })
 
   sr.reveal(`.right`,{
