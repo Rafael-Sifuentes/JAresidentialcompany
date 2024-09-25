@@ -293,6 +293,23 @@
     height: 688px;
 }
 
+.portfolio-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 64px; */
+    height: 0;
+    width: 100%;
+    z-index: 0;
+    background-color: var(--body-color);
+    transition: all .4s ease-in-out;
+}
+
+.portfolio-card:hover:before{
+    height: 106px;
+}
+
 .portfolio-card-img{
     height: 100%;
     width: 100%;
@@ -303,30 +320,47 @@
     position: absolute;
     top: -100%;
     right: 2rem;
-    color: var(--body-color);
+    color: var(--text-color);
     transition: all .6s ease-in-out;
+    font-size: var(--h3-font-size);
 }
 
 .portfolio-card-button{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     position: absolute;
     bottom: -100%;
     left: 2rem;
     transition: all .6s ease-in-out;
     height: 64px;
-    width: max-content;
+    width: 220px;
     padding: 0 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     border-radius: var(--border-radius);
+    transition: all .3s ease-in-out;
+}
+
+.portfolio-card-button:hover{
+    border: 4px solid var(--container-color);
+    width: 264px;
+    transition: all .3s ease-in-out;
 }
 
 .portfolio-card-button h4{
     color: var(--body-color);
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    transition: all .3s ease-in-out;
+}
+
+.portfolio-card-button:hover h4{
+    font-weight: var(--font-bold);
 }
 
 .portfolio-card-button img{
+    display: none;
     height: 16px;
     width: 16px;
 }
