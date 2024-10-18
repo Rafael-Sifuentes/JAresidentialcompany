@@ -1,5 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 
 
 .container{
@@ -94,7 +96,7 @@
     filter: brightness(70%);
     transition: all .4s ease-in-out;
     transform: scale(.9);
-    border-radius: var(--border-radius);
+    border-radius: 3rem;
     box-shadow: 4px 4px 8px 4px #0e171b3b;
 }
 
@@ -335,7 +337,7 @@
     left: 2rem;
     transition: all .6s ease-in-out;
     height: 64px;
-    width: 220px;
+    width: 264px;
     padding: 0 1rem;
     background-color: var(--text-color);
     border-radius: var(--border-radius);
@@ -344,7 +346,7 @@
 
 .portfolio-card-button:hover{
     border: 4px solid var(--container-color);
-    width: 264px;
+    width: 280px;
     transition: all .3s ease-in-out;
 }
 
@@ -511,7 +513,7 @@ input{
 /* -=================================== FOOTER SECTION ======================================- */
 
 .footer{
-    background-color: var(--accent-color);
+    background-color: var(--container-color);
     padding-top: 4rem;
     color: var(--body-color);
 }
@@ -688,7 +690,7 @@ input{
     }
 
     .services-list{
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
     }
 
     .about-container{
