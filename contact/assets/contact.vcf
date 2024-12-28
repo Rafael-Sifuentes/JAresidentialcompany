@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jose;Ortiz
+FN:Jose Ortiz
+ORG:J&A Residential Company
+TITLE:Owner
+TEL;TYPE=work,voice:+1-832-329-4855
+EMAIL;TYPE=work:info@jaresidentialcompany.com
+URL:https://jaresidentialcompany.com/
+END:VCARD

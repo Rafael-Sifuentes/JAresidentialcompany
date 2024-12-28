@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
+/* VARIABLE CSS================================================================================- */
+/*-============================================================================================- */
+:root{
+
+    /* COLORS=---------------- */
+    --primary-color: #D7A73F;
+    --accent-color: #232323;
+    --text-color-w: #E9DFE0;
+    --text-color-b: #232323;
+    --body-color: #DFDFDF;
+    /* ======================= */
+
+
+    /* FONT & TYPOGRAPHY====== */
+    --body-font: 'Montserrat', sans-serif;
+
+    --big-font-size: 4rem;
+    --h1-font-size: 2.986rem;
+    --h2-font-size: 2.488rem;
+    --h3-font-size: 2.074rem;
+    --h4-font-size: 1.728rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .75em;
+
+    --icon-size: 2rem;
+    --icon-size-small: 1rem;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    /* ======================= */
+
+
+    /* MARGINS & PADDING ===== */
+    --mar-sml: .5rem;
+    --mar-1: 1rem;
+    --mar-2: 1.5rem;
+    --mar-3: 2rem;
+    --mar-4: 3rem;
+    --mar-5: 4rem;
+
+    --gap-1: 1rem;
+    --gap-2: 1.5rem;
+    --gap-3: 3rem;
+    --gap-4: 4rem;
+    --gap-5: 5rem;
+
+    --header-height: 3rem;
+    /* ======================= */
+
+
+    /* MISC=================== */
+    --z-fixed: 15;
+    /* ======================= */
+
+}
+/*-============================================================================================- */
+
+/* HTML BASE===================================================================================- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--text-color-b);
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    font-size: var(--h2-font-size);
+}
+
+h3{
+    font-size: var(--h3-font-size);
+}
+
+h4{
+    font-size: var(--h4-font-size);
+}
+
+p{
+    font-size: var(--normal-font-size);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+img{
+    /* max-width: 100%; */
+    /* height: auto; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+/*-============================================================================================- */
+
+/* RESPONSIVE BREAKPOINTS======================================================================- */
+
+/* FOR SML MOBILE */
+@media screen and (max-width : 389px){
+    .container{
+        margin: 0 1rem;
+    }
+}
+
+/* FOR MOBILE */
+@media screen and (min-width: 390px){
+    .container{
+        max-width: 326px;
+        margin: 0 auto;
+    }
+}
+
+/* FOR TABLE  */
+@media screen and (min-width: 744px){
+    .container{
+        max-width: 648px;
+        margin: 0 auto;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 1100px){
+    .container{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
+/*-============================================================================================- */
+
+/* REUSABLE CSS CLASSES========================================================================- */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.responsive-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+}
+
+.section{
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title{
+    font-family: var(--title-font);
+    font-size: var(--h1-font-size);
+}
+
+.section-subtitle{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.p-text{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.transition{
+    transition: all .4s ease-in-out;
+}
+/*-============================================================================================- */
+
+/* CSS COMPONENTS =============================================================================- */
+
+/* BUTTONS */
+.button{
+    width: 326px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.button p{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.button-primary{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button-primary i{
+    font-size: var(--gap-2);
+    color: var(--text-color-w);
+}
+
+.button-primary p{
+    color: var(--text-color-w);
+    font-weight: var(--font-semi-bold);
+}
+
+.button-secondary{
+    background-color: #232323;
+}
+
+.button-secondary p{
+    color: var(--text-color-w);
+}
+/* -------- */
+
+/*-============================================================================================- */
+
+/* CARD HEADER ================================================================================- */
+.header{
+    position: relative;
+    height: 416px;
+    overflow-y: visible;
+}
+
+.header-container{
+    padding-top: 112px;
+    gap: var(--gap-1);
+    color: var(--text-color-w);
+}
+
+.header-logo-container{
+    height: 112px;
+    width: 112px;
+    position: relative;
+    place-items: center;
+    border-radius: 1rem;
+}
+
+.header-title{
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-bold);
+    margin-top: 1rem;
+}
+
+.header-title span{
+    font-weight: var(--font-light);
+}
+
+.header-subtitle{
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-light);
+}
+
+.header-text{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.header-img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 448px;
+    z-index: -1;
+}
+/*-============================================================================================- */
+
+/* CONTACT SECTION ============================================================================- */
+.contact{
+    width: 100%;
+    padding: 64px 0;
+    border-radius: 2rem;
+    background-color: var(--body-color);
+    color: var(--text-color-b);
+    border: 2px solid var(--text-color-w);
+}
+
+.contact-container{
+    /* gap: var(--gap-4); */
+}
+
+.contact-links-list{
+    width: 100%;
+    gap: var(--gap-2);
+}
+
+.contact-info-container{
+    margin-top: var(--gap-4);
+    gap: var(--gap-2);
+}
+
+.contact-info-container p{
+    font-weight: var(--font-bold);
+}
+
+.contact-info-list{
+    width: 100%;
+    display: flex;
+    gap: var(--gap-2);
+    justify-content: space-between;
+}
+
+.contact-info-list-item{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    place-items: center;
+}
+
+.contact-info-list-item i{
+    font-size: 2rem;
+}
+
+.contact-info-list-item:nth-child(1){
+    background-color: var(--accent-color);
+}
+
+.contact-info-list-item:nth-child(1) i{
+    color: var(--text-color-w);
+}
+
+.contact-info-list-item:nth-child(2){
+    border: 2px solid var(--text-color-b);
+}
+
+.contact-info-list-item:nth-child(2) i{
+    color: var(--text-color-b);
+}
+
+.additional-info-list{
+    gap: var(--gap-1);
+    margin-top: var(--gap-2);
+    /* align-items: center; */
+}
+
+.additional-info-item p{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color-b);
+}
+/*-============================================================================================- */
+
+
+
