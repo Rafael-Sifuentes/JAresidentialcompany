@@ -656,7 +656,12 @@ input{
         flex-direction: row;
     }
 
+    .home-info-container .button-primary h4{
+        font-size: var(--normal-font-size);
+    }
+
     .home-info-container{
+        gap: 1rem;
         align-items: center;
     }
 
