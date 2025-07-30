@@ -1,447 +1,443 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "GeneralContractor",
+            "name": "J&A Residential Company",
+            "description": "Houston's premier luxury residential contractor, specializing in bringing architectural visions to life with turnkey solutions.",
+            "url": "https://www.jaresidentialcompany.com",
+            "telephone": "+1-832-329-4855",
+            "email": "info@jaresidentialcompany.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "5334 Prudence Dr",
+              "addressLocality": "Houston",
+              "addressRegion": "TX",
+              "postalCode": "77045",
+              "addressCountry": "US"
+            },
+            "logo": "assets/img/Nav-logo.png",
+            "image": "assets/img/Home-img.png",
+            "areaServed": {
+              "@type": "City",
+              "name": "Houston"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Sectors",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "General Contracting"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Project Management"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Site supervision"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Specialized craftsmanship"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "10",
+              "bestRating": "10",
+              "ratingCount": "250",
+              "reviewCount": "250"
+            },
+            "sameAs": []
+          }
+    </script>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/IMG/Favicon.png" type="image/x-icon">
     <!-- REMIX ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/ETX-routes/css/reusable-css.css" as="style">
-    <link rel="stylesheet" href="assets/ETX-routes/css/style.css">
-    <title>J&A residential company | Houston TX</title>
-    <meta title="description" content="">
-    <meta title="keywords" content="Home builders contractor Houston custom homes">
+    <!-- COMPONENT CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>J&A Residential Company</title>
+    <meta name="description" content="J&A Residential Company is Houston's premier luxury residential contractor, specializing in end-to-end, turnkey solutions. With over a decade of experience and more than 250 completed projects, we deliver uncompromising quality and bring architectural visions to life."> 
+    <meta title="keywords" content="luxury residential contractor, custom home builder, general contracting, construction project management, high-end residential construction, Houston contractor, luxury homes Houston, J&A Residential Company, turnkey construction solutions, residential portfolio">
 </head>
 <body>
 
-    <!-- ========================================================== -->
-    <!-- =========================== HEADER / NAVIGATION =============================== -->
-    <header class="header none" id="header">
+    <nav class="nav transition" id="nav">
+        <div class="nav-header container flex transition">
+            <a href="#home" class="nav-logo"><img src="assets/img/Nav-logo.png" alt="Main logo"></a>
 
-        <nav class="navigation container">
+            <div class="nav-toggle-container">
+                <div class="nav-word-toggle-container transition flex-column">
+                    <p class="nav-word">Open</p>
+                    <p class="nav-word">Close</p>
+                </div>
+                <p class="nav-word nav-word-alt">menu</p>
+                <div class="nav-icon-container transition flex-column">
+                    <i class="ri-menu-line"></i>
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+        </div>
 
-            <a href="#home" class="nav-logo">
-                <img src="assets/IMG/Logo.svg" alt="J & A logo">
-            </a>
+        <div class="nav-contents-container transition">
 
-            <div class="nav-toggle-btn" id="nav-toggle-btn"><i class="ri-arrow-left-s-fill"></i></div>
+            <div class="container">
+                <ul class="nav-links flex-column">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">Company</a></li>
+                    <li class="nav-link"><a href="#services">Sectors</a></li>
+                    <li class="nav-link"><a href="#gallery">Portfolio</a></li>
+                    <li class="nav-link"><a href="#contact">Work with us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
 
-            <ul class="nav-list" id="nav-list">
+    <!-- HOME SECTION ================================================================================== -->
+    <section class="home section" data-nav-theme="light" id="home">
 
-                <li class="nav-list-item"><a href="#home">HOME</a></li>
+        <div class="home-container container flex">
+            <div class="home-frame-one flex-column">
+                <p class="home-subtitle left">Houston's premier luxury residential contractor.</p>
+                <h2 class="section-title home-title left">J&A Residential <b>Company</b></h2>
+                <button onclick="scrollToSection('about')" class="button home-button left"><a href="#about">Explore</a></button>
+            </div>
+        </div>
 
-                <li class="nav-list-item"><a href="#gallery">GALLERY</a></li>
-                <li class="nav-list-item"><a href="#services">SERVICES</a></li>
-                <li class="nav-list-item"><a href="#portfolio">OUR PORTFOLIO</a></li>
-                <li class="nav-list-item"><a href="#about">ABOUT US</a></li>
+        <img src="assets/img/Home-img.png" alt="Home image" class="home-img">
+    </section>
+    <!-- =============================================================================================== -->
 
-                <li class="nav-list-item"><a href="#contact" class="nav-button">CONTACT US</a></li>
+    <main>
+
+        <!-- ABOUT SECTION ============================================================================= -->
+        <section class="about section" data-nav-theme="dark"  id="about">
+
+            <div class="about-container container flex-column">
+                <h2 class="section-title about-title left"><span>Uncompromising</span> quality, end-to-end <b>solutions.</b></h2>
+
+                <div class="about-frame-one flex-column">
+                    <h6 class="about-description right">
+                        J&A Residential Company has been the hallmark of luxury residential construction in Houston for over a decade. We specialize in bringing architectural visions to life, delivering turnkey solutions with an unwavering commitment to quality and precision for both individual clients and large-scale contracting partners.
+                    </h6>
+
+                    <ul class="about-frame-two flex">
+                        <li class="about-card flex-column">
+                            <h3 class="about-card-title count-up" data-target="27">0<span>M</span></h3>
+                            <h6 class="about-card-description">In contracts</h6>
+                        </li>
+
+                        <li class="about-card flex-column">
+                            <h3 class="about-card-title count-up" data-target="250" >0<span>+</span> </h3>
+                            <h6 class="about-card-description">Completed projects</h6>
+                        </li>
+
+                        <li class="about-card flex-column">
+                            <h3 class="about-card-title count-up" data-target="10">0<span>+</span></h3>
+                            <h6 class="about-card-description">Years in the industry.</h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-images-container flex">
+                    <div class="about-img-container-1 bottom"><img src="assets/img/About-img-one.png" alt="About image one"></div>
+                    <div class="about-img-container-2 bottom"><img src="assets/img/About-img-two.png" alt="About image two"></div>
+                    <div class="about-img-container-3 bottom"><img src="assets/img/About-img-three.png" alt="About image two"></div>
+                </div>
+
+                <button onclick="scrollToSection('services')" class="button about-button"><a href="#services">Our services</a></button>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- SERVICES SECTION ========================================================================== -->
+        <section class="services section" data-nav-theme="light" id="services">
+                <div class="services-container container flex-column">
+
+                    <h2 class="section-title services-title right">Our <b>Sectors.</b></h2>
+
+                    <ul class="service-cards-container grid">
+                        <li class="service-card flex-column">
+                            <div class="service-card-img"><img src="assets/img/service-img-1.png" alt="A professionally managed construction site of a luxury home."></div>
+                            <h5 class="service-card-title top">General Contracting</h5>
+                        </li>
+
+                        <li class="service-card flex-column">
+                            <div class="service-card-img"><img src="assets/img/service-img-2.png" alt="Architectural blueprints and a hard hat on a wooden table."></div>
+                            <h5 class="service-card-title top">Project Management</h5>
+                        </li>
+
+                        <li class="service-card flex-column">
+                            <div class="service-card-img"><img src="assets/img/service-img-3.png" alt="A construction supervisor overseeing the framing of a new house."></div>
+                            <h5 class="service-card-title top">Site supervision</h5>
+                        </li>
 
 
-            </ul>
-
-        </nav>
-        
-    </header>
-
-    <!-- ========================================================== -->
-
-    <!-- ============================ MAIN ============================== -->
-    <main class="main">
-
-        <!-- =========================== SECTION 1 =============================== -->
-        <section class="home section" id="home">
-
-            <div class="home-container container flex-column">
-
-                <h2 class="home-subtitle section-subtitle bottom">let us</h2>
-                <h1 class="home-title section-title bottom-delayed"><span>ELEVATE</span> YOUR SPACE</h1>
-
-                <div class="home-info-container responsive-container">
-                    <a href="assets/pages/projects.html" class="button button-primary left"><h4>See our projects</h4></a>
-
-
-                    <div class="accent-line"></div>
-
-                    <ul class="home-info-list">
-                        <li class="home-list-item left-delayed"><p class="description-regular">DRYWALL</p></li>
-                        <li class="home-list-item left-delayed"><p class="description-regular">PAINT</p></li>
-                        <li class="home-list-item left-delayed"><p class="description-regular">TILE</p></li>
-                        <li class="home-list-item left-delayed"><p class="description-regular">CARPENTRY</p></li>
-                        <li class="home-list-item left-delayed"><p class="description-regular">ARTISAN STEEL</p></li>
+                        <li class="service-card flex-column">
+                            <div class="service-card-img"><img src="assets/img/service-img-4.png" alt="A craftsman carefully installing detailed trim work on a wall."></div>
+                            <h5 class="service-card-title top">Specialized craftsmanship</h5>
+                        </li>
                     </ul>
 
-                    <div class="home-logo-container"><img src="assets/IMG/Main-logo.svg" alt="" class="home-logo"></div>
-                </div>
+                    <div class="services-frame-one flex-column">
 
-                <div class="home-contacts-container">
-                    <div class="home-contact-item"><i class="ri-map-pin-5-fill"></i><a href="#">5334 Prudence Dr, Houston, TX 77045</a></div>
-                    <div class="home-contact-item"><i class="ri-phone-fill"></i><a href="tel:8323294855">(832) 329 - 4855</a></div>
-                </div>
+                        <div class="services-frame-two flex">
+                            <button data-url="service-page/services.html" class="button-alt button-alt-right"><i class="ri-arrow-right-up-line"></i><span>View services</span></button>
+                            <h6 class="services-description">
+                                Our comprehensive suite of services ensures a seamless and superior building experience, from conception to completion. Visit our services page to learn more.
+                            </h6>
+                        </div>
 
+                        <button onclick="scrollToSection('gallery')" class="button services-button"><a href="#gallery">Portfolio</a></button>
+                    </div>
+                </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- GALLERY SECTION =========================================================================== -->
+        <section class="gallery section" data-nav-theme="dark" id="gallery">
+
+            <div class="gallery-container gallery-frame-one container">
+                <h2 class="section-title gallery-title left">A Legacy of <b>Landmark</b> Residences.</h2>
             </div>
 
-            <video class="home-background-video scale" loading="lazy" id="home-video" autoplay muted loop playsinline>
-                <source src="assets/IMG/J&A Home video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="gallery-cards-container" id="gallery-cards-container">
 
-        </section>
-        <!-- ========================================================== -->
+                <!-- NOTE CARDS MUST BE IN REVERSE ORDER -->
 
-        <!-- =========================== SECTION 2 =============================== -->
+                <div class="gallery-card gallery-card-1">
+                    <div class="gallery-card-container container flex">
+                        <div class="gallery-card-button">
+                            <button data-url="/portfolio-page/portfolio.html#project-6" class="button-alt button-alt-left"><i class="ri-arrow-right-up-line"></i><span>View project</span></button>
+                        </div>
 
-        <section class="gallery section" id="gallery">
+                        <h3 class="gallery-card-title">Artisan Steel</h3>
+                    </div>
 
-            <div class="gallery-container container flex-column">
-                <h1 class="gallery-title section-title bottom">TRANSFORM YOUR HOME INTO SOMETHING <span>SPECTACULAR</span></h1>
-
-                <ul class="gallery-grid-list grid">
-                    <li class="gallery-grid-item g-i-1"><img src="assets/IMG/gallery-background-image.png" class="bottom" alt="About image one"></li>
-                    <li class="gallery-grid-item g-i-2"><img src="assets/PORT-IMG/port-1.png" class="bottom-delayed" alt="About image two"></li>
-                    <li class="gallery-grid-item g-i-3"><img src="assets/PORT-IMG/port-14.png" class="bottom-delayed" alt="About image three"></li>
-                    <li class="gallery-grid-item g-i-4"><img src="assets/PORT-IMG/port-26.png" class="bottom-delayed" alt="About image four"></li>
-                    <li class="gallery-grid-item g-i-5"><img src="assets/PORT-IMG/port-19.png" class="bottom-delayed" alt="About image five"></li>
-                    <li class="gallery-grid-item g-i-6"><img src="assets/PORT-IMG/port-5.png" class="bottom-delayed" alt="About image six"></li>
-                    <li class="gallery-grid-item g-i-7"><img src="assets/PORT-IMG/port-21.png" class="bottom-delayed" alt="About image seven"></li>
-                    <li class="gallery-grid-item g-i-8"><img src="assets/PORT-IMG/port-52.png" class="bottom-delayed" alt="About image eight"></li>
-
-                </ul>
-
-                <div class="gallery-buttons-container responsive-container">
-                    <a href="assets/pages/gallery.html" class="gallery-button left"><h4>See full gallery</h4><img src="assets/IMG/arrow-icon-white.svg" alt="arrow-icon"></a>
-                    <a href="#services" class="gallery-button left-delayed"><h4>See our services</h4><img src="assets/IMG/arrow-icon-white.svg" alt="arrow-icon"></a>
+                    <div class="gallery-img-container">
+                        <div class="card-background"></div>
+                        <img src="assets/img/Gallery-img-6.png" alt="">
+                    </div>
                 </div>
 
-            </div>
-        </section>
-        <!-- ========================================================== -->
+                <div class="gallery-card gallery-card-2">
+                    <div class="gallery-card-container container flex">
+                        <div class="gallery-card-button">
+                            <button data-url="/portfolio-page/portfolio.html#project-5" class="button-alt button-alt-left"><i class="ri-arrow-right-up-line"></i><span>View project</span></button>
+                        </div>
 
-        <!-- =========================== SECTION 3 =============================== -->
-        <section class="services section" id="services">
-
-            <div class="services-container container flex-column">
-                <h1 class="services-title section-title bottom">OUR<br><span>SERVICES</span></h1>
-
-                <ul class="services-list grid">
-                    <li class="services-list-item flex-column bottom">
-                        <div class="list-item-line"></div>
-                        <h3 class="service-item-title">Drywall</h3>
-                        <div class="list-item-line"></div>
-                    
-                        <ul class="incepted-list flex-column">
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Installation & Repair</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Finishing & Texturing</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Soundproofing</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Fireproofing</p></li>
-                        </ul>
-                    
-                        <div class="list-item-line"></div>
-                        <a href="/assets/pages/gallery.html" class="service-list-button"><p>SEE EXAMPLES</p><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                      </li>
-                    
-                      <li class="services-list-item flex-column bottom-delayed">
-                        <div class="list-item-line"></div>
-                        <h3 class="service-item-title">Paint</h3>
-                        <div class="list-item-line"></div>
-                    
-                        <ul class="incepted-list flex-column">
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Interior Painting</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Exterior Painting</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-list-description">Cabinet Painting</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Accent Walls</p></li>
-                        </ul>
-                    
-                        <div class="list-item-line"></div>
-                        <a href="/assets/pages/gallery.html" class="service-list-button"><p>SEE EXAMPLES</p><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                      </li>
-                    
-                      <li class="services-list-item flex-column bottom-delayed">
-                        <div class="list-item-line"></div>
-                        <h3 class="service-item-title">Tile</h3>
-                        <div class="list-item-line"></div>
-                    
-                        <ul class="incepted-list flex-column">
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-list-description">Flooring</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-list-description">Backsplashes</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-list-description">Shower Surrounds</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-list-description">Custom Tilework</p></li>
-                        </ul>
-                    
-                        <div class="list-item-line"></div>
-                        <a href="/assets/pages/gallery.html" class="service-list-button"><p>SEE EXAMPLES</p><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                      </li>
-
-                      <li class="services-list-item flex-column bottom-delayed">
-                        <div class="list-item-line"></div>
-                        <h3 class="service-item-title">Carpentry</h3>
-                        <div class="list-item-line"></div>
-                      
-                        <ul class="incepted-list flex-column">
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Custom Built-ins</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Crown Molding & Trim</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Door & Window Installation</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Flooring Installation & Repair</p></li>
-                        </ul>
-                      
-                        <div class="list-item-line"></div>
-                        <a href="/assets/pages/gallery.html" class="service-list-button"><p>SEE EXAMPLES</p><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                      </li>
-
-                      <li class="services-list-item flex-column bottom-delayed">
-                        <div class="list-item-line"></div>
-                        <h3 class="service-item-title">Artisan Steel</h3>
-                        <div class="list-item-line"></div>
-                      
-                        <ul class="incepted-list flex-column">
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Custom Steel stair railings</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Bespoke steel doors</p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Architectural Steel Accents </p></li>
-                          <li class="incepted-list-item"><div class="box"></div> <p class="incepted-item-description">Luxury Steel Features</p></li>
-                        </ul>
-                      
-                        <div class="list-item-line"></div>
-                        <a href="assets/pages/projects.html#projects-showcase-9" class="service-list-button"><p>SEE EXAMPLES</p><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                      </li>
-                </ul>
-            </div>
-        </section>
-        <!-- ========================================================== -->
-
-        <!-- =========================== SECTION 4 =============================== -->
-        <section class="portfolio section" id="portfolio">
-
-            <h1 class="portfolio-title section-title bottom">RECENT<br><span>PROJECTS</span></h1>
-
-            <div class="portfolio-card-container swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">703 Malone</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-1" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-49.png" alt="Portfolio image 1" class="portfolio-card-img">
+                        <h3 class="gallery-card-title">703 Malone</h3>
                     </div>
 
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">89 W Grand Regency</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-10" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-57.png" alt="Portfolio image 1" class="portfolio-card-img">
+                    <div class="gallery-img-container">
+                        <div class="card-background"></div>
+                        <img src="assets/img/Gallery-img-5.png" alt="">
+                    </div>
+                </div>
+
+                <div class="gallery-card gallery-card-3">
+                    <div class="gallery-card-container container flex">
+                        <div class="gallery-card-button">
+                            <button data-url="/portfolio-page/portfolio.html#project-4" class="button-alt button-alt-left"><i class="ri-arrow-right-up-line"></i><span>View project</span></button>
+                        </div>
+
+                        <h3 class="gallery-card-title">4072 Sul Ross</h3>
                     </div>
 
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">Artisan Steel</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-9" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-69.png" alt="Portfolio image 1" class="portfolio-card-img">
+                    <div class="gallery-img-container">
+                        <div class="card-background"></div>
+                        <img src="assets/img/Gallery-img-4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="gallery-card gallery-card-4">
+                    <div class="gallery-card-container container flex">
+                        <div class="gallery-card-button">
+                            <button data-url="/portfolio-page/portfolio.html#project-3" class="button-alt button-alt-left"><i class="ri-arrow-right-up-line"></i><span>View project</span></button>
+                        </div>
+
+                        <h3 class="gallery-card-title">1914 Glosridge</h3>
                     </div>
 
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">11101 Beinhorn</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-2" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-43.png" alt="Portfolio image 1" class="portfolio-card-img">
+                    <div class="gallery-img-container">
+                        <div class="card-background"></div>
+                        <img src="assets/img/Gallery-img-3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="gallery-card gallery-card-5">
+                    <div class="gallery-card-container container flex">
+                        <div class="gallery-card-button">
+                            <button data-url="/portfolio-page/portfolio.html#project-2" class="button-alt button-alt-left"><i class="ri-arrow-right-up-line"></i><span>View project</span></button>
+                        </div>
+
+                        <h3 class="gallery-card-title">4011 West main</h3>
                     </div>
 
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">4027 Sul Ross</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-3" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-37.png" alt="Portfolio image 1" class="portfolio-card-img">
+                    <div class="gallery-img-container">
+                        <div class="card-background"></div>
+                        <img src="assets/img/Gallery-img-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="gallery-card gallery-card-6">
+                    <div class="gallery-card-container container flex">
+                        <div class="gallery-card-button">
+                            <button data-url="/portfolio-page/portfolio.html#project-1" class="button-alt button-alt-left"><i class="ri-arrow-right-up-line"></i><span>View project</span></button>
+                        </div>
+
+                        <h3 class="gallery-card-title">89 W Grand Regency</h3>
                     </div>
 
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">4011 West Main</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-4" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-31.png" alt="Portfolio image 1" class="portfolio-card-img">
+                    <div class="gallery-img-container">
+                        <div class="card-background"></div>
+                        <img src="assets/img/Gallery-img-1.png" alt="">
                     </div>
-
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">4006 Essex</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-5" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-26.png" alt="Portfolio image 1" class="portfolio-card-img">
-                    </div>
-
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">3762 Georgetown</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-6" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-15.png" alt="Portfolio image 1" class="portfolio-card-img">
-                    </div>
-
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">528 W 31st</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-7" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-8.png" alt="Portfolio image 1" class="portfolio-card-img">
-                    </div>
-
-                    <div class="portfolio-card swiper-slide">
-                        <h4 class="portfolio-card-title">307 W 32nd</h4>
-                        <a href="assets/pages/projects.html#projects-showcase-8" class="portfolio-card-button"><h4>View full project</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <img src="assets/PORT-IMG/port-1.png" alt="Portfolio image 1" class="portfolio-card-img">
-                    </div>
+                </div>
                 
-                </div>
-            </div>
-        </section>
-        <!-- ========================================================== -->
-
-        <!-- =========================== SECTION 5 =============================== -->
-        <section class="about section" id="about">
-            <div class="about-container container responsive-container">
-
-                <ul class="about-box-one grid">
-                    <li class="a-i-1 about-list-item left"><h4>10 +</h4><p>Years of experiance</p></li>
-                    <li class="a-i-2 about-list-item right"><h4>1000 +</h4><p>Completed projects</p></li>
-                    <li class="a-i-3 about-list-item bottom"><img class="about-img" src="assets/PORT-IMG/port-51.png" alt="About image"></li>
-                </ul>
-
-                <div class="about-box-two flex-column">
-                    <h4 class="about-subtitle section-subtitle left">Why choose <span>us ?</span></h4>
-                    <h2 class="about-title section-title bottom">YOUR VISION, SEAMLESSLY <span>BUILT.</span></h2>
-                    <p class="about-description description-regular bottom-delayed">
-                        At J & A Construction, we specialize in creating custom homes that reflect your unique vision and lifestyle. Based in the greater Houston area, we take pride in offering a personalized and comprehensive approach to home building. Our team works closely with you from the initial concept design to the final finishing touches, ensuring that your dream home becomes a reality without the stress. Experience the difference of a truly custom home built with quality and care.
-                    </p>
-
-                    <div class="about-buttons-container responsive-container">
-                        <a href="assets/pages/gallery.html" class="gallery-button left"><h4>Explore our gallery</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                        <a href="#contact" class="gallery-button left-delayed"><h4>Get a quote</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ========================================================== -->
-
-        <section class="contact section" id="contact">
-
-            <div class="contact-container container flex-column">
-
-                <div class="contact-titles-container flex-column">
-                    <h2 class="section-title contact-title bottom">Let's get in <span>Touch</span></h2>
-                    <p class="contact-description description-regular bottom-delayed">
-                        if you have any questions, fill out the form 
-                        below and we will get back with you as soon
-                        as possible !
-                    </p>
-                </div>
-
-                <form action="#" class="contact-form grid" id="contact-form">
-
-                    <div class="contact-form-group">
-                        <label class="bottom">Name</label>
-                        <input type="text"  class="contact-form-text bottom-delayed" name="name">
-                    </div>
-
-                    <div class="contact-form-group">
-                        <label class="bottom">Phone or email</label>
-                        <input type="text"  class="contact-form-text bottom-delayed" name="email">
-                    </div>
-
-                    <div class="contact-form-group grid-item-three">
-                        <label class="bottom">Message</label>
-                        <textarea class="contact-form-text bottom-delayed" id="contact-project" name="message" required></textarea>
-                    </div>
-
-                    <div class="contact-button grid-item-four bottom">
-                        <button type="submit" class="contact-button" id="contact-button"><h4>Send form</h4><img src="assets/IMG/arrow-icon.svg" alt="arrow-icon"></button>
-                    </div>
-
-                    <div class="contact-message" id="contact-message"></div>
-
-                </form>
-
             </div>
 
+            <div class="gallery-container gallery-frame-two flex-column container">
+
+                <h2 class="section-title gallery-title-alt right">The J&A Standard of <b>Excellence.</b></h2>
+                <h5 class="gallery-description left">
+                    Our leadership team brings a combined 25 years of experience, fostering a client-centric approach that has made us a trusted partner for large contractors and discerning homeowners alike. We are dedicated to building not just exceptional homes, but also lasting relationships.
+                </h5>
+                <button onclick="scrollToSection('contact')" class="gallery-button button"><a href="#contact">Contact</a></button>
+            </div>
         </section>
+        <!-- =========================================================================================== -->
+
+        <!-- CONTACT SECTION =========================================================================== -->
+        <section class="contact section" data-nav-theme="light" id="contact">
+
+            <div class="contact-container-one">
+                <div class="container flex-column contact-frame-one">
+                    <h2 class="section-title contact-title left">Work with <b>us.</b></h2>
+                    <h5 class="contact-description">
+                        We are seeking partnerships with discerning clients and premier contractors.
+                    </h5>
+
+                    <ul class="contact-list-container flex-column">
+                        <li class="contact-list-item right"><h3 class="contact-list-item-description">info@<br>jaresidentialcompany.com</h3></li>
+                        <li class="contact-list-item right"><h3 class="contact-list-item-description">5334 Prudence Dr, Houston TX 77045</h3></li>
+                        <li class="contact-list-item right"><h3 class="contact-list-item-description">832.329.4855</h3></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-container-two">
+                <div class="contact-frame-two container flex">
+                    <div class="contact-button"><button class="button-alt button-alt-right"><i class="ri-arrow-right-up-line"></i><span>Go to gallery</span></button></div>
+                    <h3 class="contact-title-alt bottom">See what sets us <b>apart.</b></h3>
+                </div>
+
+                <img src="assets/img/Contact-img.png" alt="">
+
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
     </main>
 
-    <!-- ============================ FOOTER ============================== -->
-    <footer class="footer section">
-
+    <!-- FOOTER SECTION ================================================================================ -->
+    <footer class="footer section" data-nav-theme="dark" id="footer">
         <div class="footer-container container flex-column">
-            <div class="footer-logo-container"><img src="assets/IMG/footer-logo.svg" alt="Footer logo" class="footer-logo"></div>
-
-            <div class="footer-responsive-container responsive-container">
-                <div class="footer-contact-info flex-column">
-                    <h4 class="footer-contact-title ">Contact <span>Us</span></h4>
-
-                    <ul class="footer-contact-info-list flex-column">
-
-                        <li><a href="tel:8323294855" class="contact-footer-list-item"><i class="ri-phone-fill"></i><p>(832) 329 - 4855</p></a></li>
-                        <li><a href="mailto:info@jaresidentailcompany.com" class="contact-footer-list-item"><i class="ri-mail-send-fill"></i><p>info@jaresidentialcompany.com</p></a></li>
-                        <li><a href="https://www.google.com/maps/place/5334+Prudence+Dr,+Houston,+TX+77045/@29.624536,-95.462174,17z/data=!3m1!4b1!4m6!3m5!1s0x8640ebceaaed71db:0xde87307922388231!8m2!3d29.624536!4d-95.462174!16s%2Fg%2F11bw42gkgb?entry=ttu" target="_blank" class="contact-footer-list-item"><i class="ri-map-pin-5-fill"></i><p>5334 Prudence Dr, Houston TX 77045</p></a></li>
-
-                    </ul>
-                </div>
-
-                <div class="footer-site-links-container flex-column">
-
-                    <div class="site-links-group flex-column">
-                        <p class="description-medium">Services</p>
-                        <ul class="site-links-list">
-                            <li><p class="site-link"><a href="#">Drywall</a></p></li>
-                            <li><p class="site-link"><a href="#">Paint</a></p></li>
-                            <li><p class="site-link"><a href="#">Carpentry</a></p></li>
-                            <li><p class="site-link"><a href="#">Tile</a></p></li>
-                        </ul>
-                    </div>
-
-                    <div class="site-links-group flex-column">
-                        <p class="description-medium">Home</p>
-                        <ul class="site-links-list">
-                            <li><p class="site-link"><a href="#">Gallery</a></p></li>
-                            <li><p class="site-link"><a href="#">Services</a></p></li>
-                            <li><p class="site-link"><a href="#">Portafolio</a></p></li>
-                            <li><p class="site-link"><a href="#">About us</a></p></li>
-                        </ul>
-                    </div>
-
-                    <div class="site-links-group flex-column">
-                        <p class="description-medium">Gallery</p>
-                        <ul class="site-links-list">
-                            <li><p class="site-link"><a href="#">Projects</a></p></li>
-                            <li><p class="site-link"><a href="#">Contact</a></p></li>
-                        </ul>
-                    </div>
-
-                    <div class="site-links-group flex-column">
-                        <p class="description-medium">Portafolio</p>
-                        <ul class="site-links-list">
-                            <li><p class="site-link"><a href="#">Interiors</a></p></li>
-                            <li><p class="site-link"><a href="#">Contact</a></p></li>
-                        </ul>
-                    </div>
-
+            <div class="footer-frame-one flex bottom">
+                <div class="footer-logo"><img src="assets/img/Main-logo.png" alt="Main logo"></div>
+                <div class="footer-name flex-column">
+                    <h4>J&A Residential <b>Company</b></h4>
+                    <p>Houston's premier luxury residential contractor.</p>
                 </div>
             </div>
+
+            <div class="footer-frame-two flex">
+                <ul class="footer-info-list flex-column">
+                    <li class="footer-list-item"><a href="tel:8323294855">832.329.4855</a></li>
+                    <li class="footer-list-item"><a href="mailto:info@jaresidentialcompany.com">info@jaresidentialcompany.com</a></li>
+                    <li class="footer-list-item"><a href="#">5334 Prudence Dr. Houston TX</a></li>
+                    <li class="footer-list-item"><a href="#">Bonded & Insured</a></li>
+                    <li class="footer-list-item"><a href="#">Careers</a></li>
+                    <li class="footer-list-item"><a href="#">Client portal</a></li>
+                </ul>
+
+                <ul class="footer-links-list flex-column">
+                    <li class="footer-links-item flex-column">
+                        <p class="footer-links-title">Landing page</p>
+                        <div class="footer-links-container flex">
+                            <a href="#home" class="footer-link">Home</a>
+                            <a href="#about" class="footer-link">Company</a>
+                            <a href="#services" class="footer-link">Our Sectors</a>
+                            <a href="#gallery" class="footer-link">Portfolio</a>
+                            <a href="#contact" class="footer-link">Work with us</a>
+                        </div>
+                    </li>
+
+                    <li class="footer-links-item flex-column">
+                        <p class="footer-links-title">Services page</p>
+                        <div class="footer-links-container flex">
+                            <a href="/service-page/services.html" class="footer-link">Core services</a>
+                            <a href="/service-page/services.html#carpentry" class="footer-link">Carpentry</a>
+                            <a href="/service-page/services.html#drywall" class="footer-link">Drywall</a>
+                            <a href="/service-page/services.html#paint" class="footer-link">Paint</a>
+                            <a href="/service-page/services.html#tile" class="footer-link">Tile</a>
+                            <a href="/service-page/services.html#steel" class="footer-link">Artisian steel</a>
+                        </div>
+                    </li>
+
+                    <li class="footer-links-item flex-column">
+                        <p class="footer-links-title">Gallery page</p>
+                        <div class="footer-links-container flex">
+                            <a href="#" class="footer-link">Portfolio</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-signature flex">
+                <div class="flex"><p>Made by <b>ETX</b> Software</p> <div class="img-container"><img src="assets/img/code-logo.png" alt=""></div></div>
+
+                <p>&#169 2025</p>
+            </div>
         </div>
-
-        <div class="footer-line"></div>
-
-        <div class="footer-credits-container container">
-
-            <a href="https://etxsoftware.com/" target="_blank" class="etx-software">Website by <span>ETX Software development</span><img src="assets/IMG/Etx-logo.svg" alt="Etx logo"></a>
-
-            <h4 class="ja">J & A Residential company LLC.</h4>
-
-            <p class="copyright">&#169;<b>2025 All Rights reserved</b></p>
-        </div>
-    </footer> 
-    <!-- ========================================================== -->
+    </footer>
+    <!-- =============================================================================================== -->
 
 
-    <!-- ========================================================== -->
-    <!-- =========================== JAVASCRIPT LINKS =============================== -->
-     <!--=============== EMAIL JS ===============-->
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- JAVASCRIPT =============================================================== -->
     <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- MAIN JS -->
-    <script src="assets/ETX-routes/javascript/header.js"></script>
-    <script src="assets/ETX-routes/javascript/reusable-js.js"></script>
-    <script src="assets/ETX-routes/javascript/main.js"></script>
-    <!-- ========================================================== -->
+    <!-- PAGE SPECIFIC JS -->
+    <script src="assets/main.js"></script>
 </body>
 </html>
